@@ -87,7 +87,7 @@ contract ViaggioMerci {
         console.log("Autorizzazione di volo accettata!");
     }
 
-    // Funzione per richiedere un rimborso per un viaggio non pagato o cancellato
+    // Funzione per richiedere un rimborso per un viaggio cancellato
     function richiediRimborso(uint256 _codiceVolo) public {
         require(viaggi[_codiceVolo].assistenza, "Non hai diritto al rimborso!");
 
